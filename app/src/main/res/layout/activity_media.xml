@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#00DFFF">
+
+    <ListView
+        android:id="@+id/songList"
+        android:layout_width="384dp"
+        android:layout_height="303dp"
+        android:layout_margin="16dp"
+        android:background="#00A3CA"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songList"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="64dp"
+        android:text="0:00"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnPervios"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songName"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="37dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="64dp"
+        android:text="9:99"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songName"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textVolume"
+        android:layout_width="191dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="Громкость"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarVolume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#0028A4"
+        android:text="▶"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songList"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnPervios"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#0028A4"
+        android:text="◀"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songList"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="▶"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FB0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songList" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:progressBackgroundTint="#2600FF"
+        android:progressTint="#1200EF"
+        android:thumbTint="#0000A8"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songList"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <SeekBar
+        android:id="@+id/seekBarVolume"
+        android:layout_width="248dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="108dp"
+        android:progressBackgroundTint="#2600FF"
+        android:progressTint="#1200EF"
+        android:thumbTint="#0000A8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

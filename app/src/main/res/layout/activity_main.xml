@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/purple">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:layout_margin="4dp"
+            android:text="Хаб"
+            android:textSize="25dp"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/GoCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fA1900FA"
+            android:layout_margin="4dp"
+            android:text="Калькулятор" />
+        <Button
+            android:id="@+id/Gomedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fA1900FA"
+            android:layout_margin="4dp"
+            android:text="Медиа плеер" />
+        <Button
+            android:id="@+id/Golocat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fA1900FA"
+            android:layout_margin="4dp"
+            android:text="Локатор" />
+
+</LinearLayout>
